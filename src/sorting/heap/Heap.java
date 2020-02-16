@@ -1,4 +1,4 @@
-package heap;
+package sorting.heap;
 
 import java.util.Arrays;
 
@@ -23,7 +23,7 @@ public class Heap {
         int arrSize = arr.length;
         arr =buildMaxHeap(arr);
         System.out.println(Arrays.toString(arr));
-        for(int i=9;i>=0;i--) {
+        for(int i=arrSize-1;i>=0;i--) {
             swap(arr,0,arrSize-1);
             arrSize--;
             heapify(arr,0,arrSize);

@@ -19,7 +19,6 @@ class SortestPath2DArray {
         }
     }
 
-
     public int sortestPath(char[][] grid, Node source) {
 
         Queue<Node> queue = new LinkedList<Node>();

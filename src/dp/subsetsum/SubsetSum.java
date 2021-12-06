@@ -27,7 +27,7 @@ public static void main (String ...args) {
 
             for( int j=1;j<=sum;j++) {
                  if(arr[i-1] > j) {
-                     subset[i][j] = subset[i][j-1];
+                     subset[i][j] = subset[i-1][j];
                  }
                  else
                   subset[i][j] =   subset[i-1][j] | subset[i-1][j-arr[i-1]];

@@ -12,10 +12,9 @@ public static void main (String ...args) {
   public static boolean subSetSum(int arr [],int sum) {
 
      boolean subset [][] = new boolean[arr.length+1][sum+1];
-     // non zero sum can not be possible  by having no element
-
+    
       int n = arr.length;
-
+      // non zero sum not possible with subset with not zero elm  
       for(int i=0;i<=sum;i++) {
           subset[0][i]= false;
         }

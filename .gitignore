@@ -3,5 +3,5 @@
 
 # User-specific stuff
 .idea
-**/DS-ALGO.iml
+*.iml
 **/.DS_Store

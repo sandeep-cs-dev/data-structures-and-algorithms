@@ -1,7 +1,6 @@
 package graph.prims;
 
 import java.util.Arrays;
-
 public class Prims {
 
     public static void main(String[] args) {

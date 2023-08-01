@@ -14,13 +14,17 @@ public class KthMaxElementHeap {
    public static int findKthMaxElement (int k, int [] input){
 
         //buildMinHeap(input);
+
+       // maintain heap of size k
+       // when size of heap is less than k just insert and hea
          var heapOfK =   new int[k];
          int ind=0;
          for( int i=0;i<input.length;i++){
 
            if(heapOfK.length<k){
              heapOfK[ind++]= input[i];
-               heapify(0,heapOfK,k);
+            if(ind==k)
+             heapify(0,heapOfK,k);
            } else {
               if(heapOfK[0]<input[i]){
                   heapOfK[0]=input[i];

@@ -23,7 +23,8 @@ public class ArraySubsetBacktracking {
   */
          subsets.add(subset);
          System.out.println(Arrays.toString(subset.toArray()));
-        for(int i=start;i<arr.length;i++) {
+
+         for(int i=start;i<arr.length;i++) {
             subset.add(arr[i]);
             Subsets(subsets,subset,arr,i+1);
             subset.remove(subset.size()-1);// back tracking

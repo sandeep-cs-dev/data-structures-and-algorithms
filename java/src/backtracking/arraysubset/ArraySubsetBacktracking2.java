@@ -28,6 +28,7 @@ public class ArraySubsetBacktracking2 {
          //  select
             subset.add(arr[ind]);
             subsets(subset,arr,ind+1);
+            //backtrack
             subset.remove(subset.size()-1);
             subsets(subset,arr,ind+1);
     }

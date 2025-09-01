@@ -33,7 +33,6 @@ public class PrintPermutationsOfArray {
              swap(i,j,input); // back track
         }
     }
-
     public static void swap (int i, int j, int [] input) {
         int tmp =  input[i];
         input[i]= input[j];
